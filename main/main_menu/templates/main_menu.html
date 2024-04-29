@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="{{ url_for('main_menu.static', filename='css/main-Log_In.css') }}"/>
+
+{%
+    set menu_items = {
+        'Home_Page': '/',
+        'Search_Results': url_for('Search_Results.index'),
+        'About_Us': url_for('About_Us.index'),
+        'profile': url_for('profile.index'),
+        'Log_In': url_for('Log_In.index'),
+        '
+    }
+%}
+
+{% for item in menu_items %}
+    <li>
+        <a
+            href="{{ menu_items[item] }}"
+            {% if menu_items[item] == request.path %}
+                class="active"
+            {% endif %}
+        >{{ item | capitalize }}</a>
+    </li>
+{% endfor %}

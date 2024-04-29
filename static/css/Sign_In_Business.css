@@ -1,0 +1,92 @@
+.my-form1{
+  padding: 1.25em 10.125em;
+  color: var(--delft-blue);
+}
+
+.my-form1 input{
+  padding: 0.5em;
+  width: 20vw;
+  border-radius: 0.625em;
+
+}
+.my-form1 input[type="submit"]{
+  font-size: 1em;
+  width:8em;
+  padding:0.5em 0;
+  border-radius: 0.5em;
+  border: 0.12em solid var(--sunset);
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--yinmn-blue);
+  color: white;
+  cursor: pointer;
+}
+
+.my-form1 input[type="submit"]:hover{
+  color: var(--yinmn-blue);
+  background-color: var(--sunset);
+  border: 0.12em solid var(--yinmn-blue);
+}
+
+.card{
+  display:flex;
+  flex-wrap:wrap;
+	margin: 0 auto;
+	padding: 1.875em 1.875em;
+	width: 55%;
+  background: padding-box;
+  justify-content:center;
+  gap: 1.875em;
+  min-width:23em;
+}
+
+.Sign_In_Business{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.gender{
+  background-color:white ;
+  color:#2f3640;
+  border-radius: 0.625em;
+  padding:0.3em 0.3em;
+  cursor:pointer;
+}
+
+.gender option{
+  background-color:var(--delft-blue);
+  color:white;
+}
+
+.my-form1 input:focus{
+  border-color:lightblue;
+  border-width:0.5em;
+}
+.gender:focus{
+  border-color:lightblue;
+  border-width:0.3em;
+}
+
+
+.Profession{
+  background-color:white ;
+  color:#2f3640;
+  border-radius: 0.625em;
+  padding:0.3em 0.3em;
+  cursor:pointer;
+}
+
+.Profession option{
+  background-color:var(--delft-blue);
+  color:white;
+}
+
+.Profession:focus{
+  border-color:lightblue;
+  border-width:0.3em;
+}
+
+.msg1 {
+  color: red;
+}

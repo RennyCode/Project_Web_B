@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Homepage' %}
+
+
+{% block css %}
+
+    <link rel="stylesheet" href="{{ url_for('homePage.static', filename='css/homePage.css') }}"/>
+
+{% endblock %}
+
+{% block page_body_main_content %}
+    <body>
+    <div class="homePage">
+       <h1>Everything around you</h1>
+       <br>
+        {% if username %}
+        <h2>Hello to {{username}} !</h2>
+        {% else %}
+        <h2>Hello to stranger !</h2>
+        {% endif %}
+        <br>
+       <p>Select your profession, and we'll help you discover the perfect business opportunity tailored to your expertise.</p>
+       <br>
+       <br>
+       <div class = "categories-Con">
+          <button type="button" class="category">
+              <img src="../../static/img/renovations_image.png" alt="Renovations Image">
+              <a href="/searchResults?cat=renovations"> renovations</a></button>
+          <button type="button" class="category">
+             <img src="../../static/img/technician_image.png" alt="technician Image">
+              <a href="/searchResults?cat=technician"> technician</a></button>
+          <button type="button" class="category">
+               <img src="../../static/img/professional_image.png" alt="professional Image">
+              <a href="/searchResults?cat=professional"> professional</a></button>
+          <button type="button" class="category">
+                <img src="../../static/img/plumber_image.png" alt="plumber Image">
+              <a href="/searchResults?cat=plumbing"> plumber</a></button>
+          <button type="button" class="category">
+               <img src="../../static/img/homeMaintenance_image.png" alt="homeMaintenance Image">
+              <a href="/searchResults?cat=homeMaintenance"> homeMaintenance</a></button>
+          <button type="button" class="category">
+                <img src="../../static/img/craftsmen_image.png" alt="craftsmen Image">
+              <a href="/searchResults?cat=craftsmen"> craftsmen</a></button>
+          <button type="button" class="category">
+               <img src="../../static/img/serviceLaboratories_image.png" alt="serviceLaboratories Image">
+              <a href="/searchResults?cat=serviceLaboratories"> serviceLaboratories</a></button>
+          <button type="button" class="category">
+               <img src="../../static/img/Installers_image.png" alt="Installers Image">
+              <a href="/searchResults?cat=Installers"> Installers</a></button>
+       </div>
+
+        <br>
+        <br>
+    <H3>Who we are?</H3>
+        <div class = "description">
+          <p>
+      Discover a user-friendly platform connecting skilled handymen with individuals in need of household services. Our focused design ensures a convenient and secure experience, bringing comfort and peace of mind to both handymen and users alike.
+          </p>
+        </div>
+    </div>
+
+  </body>
+{% endblock %}

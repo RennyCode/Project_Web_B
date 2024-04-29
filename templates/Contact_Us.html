@@ -1,0 +1,40 @@
+
+        <link rel="stylesheet" href="../static/css/Contact_Us.css">
+        {% extends 'HTML_Files/base.html' %}
+        {% block title %}
+      Contact Us
+      {% endblock %}
+        {% block main_block %}
+
+  <body>
+      <div class= "card">
+          <div class="service">
+            <h1> Are you left with questions? <br> we will be happy to hear from you</h1>
+            <p>or you can contact us by email: fixit@gmail.com</p>
+          </div>
+          <form action="" class="my-form4">
+              <div class="msg4"></div>
+              Name: <br><br> <input type="text" name="First-Name"  id="First-Name" placeholder="First name...">
+              <br>
+              <br>
+              Last Name:<br><br> <input type="text" name="Last-Name" id="Last-Name" placeholder="Last name...">
+              <br>
+              <br>
+              email:<br><br> <input type="text" name="E-mail" id="Email" placeholder="E-mail...">
+              <br>
+              <br>
+              Phone Number:<br><br> <input type="tel" name="Phone" id="Phone" placeholder="Phone number...">
+              <br>
+              <br>
+              Message:<br><br><textarea name="report" id="report" placeholder="Free Text..."></textarea>
+              <br>
+              <br>
+              <div class="bottoms">
+                <input type="submit" class="submit" name="" value="send">
+              </div>
+          </form>
+      </div>
+  <script src="../static/js/Contact_Us.js"></script>
+  </body>
+
+        {% endblock %}

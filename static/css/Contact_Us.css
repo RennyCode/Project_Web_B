@@ -1,0 +1,110 @@
+.my-form4{
+  color: var(--delft-blue);
+}
+
+h1{
+  font-size: 1.8rem;
+  border-radius: 0.5em;
+  text-align: center;
+  background-color: var(--powder-blue);
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.my-form4 input{
+  padding: 0.5em;
+  width: 30vw;
+  border-radius: 0.625em;
+}
+
+.my-form4 textarea{
+  padding: 0.5em;
+  height: 25vh;
+  width: 30vw;
+}
+
+.my-form4 input[type="submit"]{
+  font-size: 1em;
+  width:8em;
+  padding:0.5em 0;
+  border-radius: 0.5em;
+  border: 0.12em solid var(--sunset);
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  background-color: var(--yinmn-blue);
+  color: white;
+  cursor: pointer;
+}
+
+.my-form4 input[type="submit"]:hover{
+  color: var(--yinmn-blue);
+  background-color: var(--sunset);
+  border: 0.12em solid var(--yinmn-blue);
+
+}
+.card{
+  display:flex;
+  flex-wrap:wrap;
+	margin: 0 auto;
+	padding: 1.875em 1.875em;
+	background-color:black;
+  border-radius: 0.625em;
+	width: 55%;
+  background: padding-box;
+  background-padding:  1.875em 1.875em;
+  justify-content:center;
+  align-items:center;
+  gap: 1.875em;
+  min-width:35em;
+}
+
+.service{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+  margin: 0;
+}
+
+bottoms{
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.text{
+  background-color:white ;
+  color:#2f3640;
+  border-radius: 0.625em;
+  padding:0.3em 0.3em;
+  cursor:pointer;
+}
+
+.text option{
+  background-color:grey;
+  color:white;
+}
+
+.my-form4 input:focus{
+  border-color:lightblue;
+  border-width:0.5em;
+}
+
+.text:focus{
+  border-color:lightblue;
+  border-width:0.3em;
+}
+
+.my-form4 textarea:focus{
+  border-color:lightblue;
+  border-width:0.5em;
+}
+
+
+.msg4 {
+  color: red;
+}

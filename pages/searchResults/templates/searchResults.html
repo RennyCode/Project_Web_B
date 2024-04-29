@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Search_Results' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('searchResults.static', filename='css/searchResults.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+    <body>
+    <div class="card-search">
+          <h1 class="card-title">{{ business.businessName }}</h1>
+          <!--<p class="card-text">search house kipping </p>-->
+        <div class="content-row">
+            <div class="details" id="businessDetails">
+            <p>Based in {{ business.city }}</p>
+            </div>
+            <img src="../../static/img/handyman.png" alt="handyman" id="imgHandy">
+        </div>
+
+        <button type="button" class="btn" id="phoneButton" onclick="showPhone('{{ business.phone }}')">Click to show the Phone number</button>
+        <div id="phoneNumberDisplay"></div>
+        <div class="buttons">
+          <button class="prev" type="button" id="prevButton" onclick="changeBusiness('{{ current_index - 1 }}', '{{ total_count }}', '{{ cat }}')">
+            <img src="../../static/img/preview.png" alt="Previous" id="prev">
+          </button>
+          <button class="next" type="button" id="nextButton" onclick="changeBusiness('{{ current_index + 1 }}', '{{ total_count }}', '{{ cat }}')">
+            <img src="../../static/img/next.png" alt="Next" id="next">
+          </button>
+        </div>
+    </div>
+  </body>
+
+{% endblock %}
+
+{% block page_body_footer %}{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('searchResults.static', filename='js/searchResults.js') }}"></script>
+{% endblock %}

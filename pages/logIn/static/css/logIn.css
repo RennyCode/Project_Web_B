@@ -1,0 +1,76 @@
+.my-form3{
+  padding: 1.25em 28.125em;
+  margin:0;
+  color: var(--delft-blue);
+}
+
+.my-form3 input{
+  padding: 0.5em;
+  width: 20vw;
+  border-radius: 0.625em;
+}
+
+.my-form3 input[type="submit"]{
+  font-size: 1em;
+  width:8em;
+  padding:0.5em 0;
+  border-radius: 0.5em;
+  border: 0.12em solid var(--sunset);
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  background-color: var(--yinmn-blue);
+  color: white;
+  cursor: pointer;
+}
+
+.my-form3 input[type="submit"]:hover{
+  color: var(--yinmn-blue);
+  background-color: var(--sunset);
+  border: 0.12em solid var(--yinmn-blue);
+
+}
+
+.card{
+  flex-wrap:wrap;
+  display: flex;
+  margin: 0 auto;
+  padding: 1.875em 1.875em;
+  border-radius: 0.625em;
+  width: 50%;
+  background: padding-box;
+  justify-content:center;
+  align-items:center;
+  gap: 1.875em;
+  min-width:20em;
+}
+
+.login{
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.my-form3 input:focus{
+  border-color:lightblue;
+  border-width:0.5em;
+}
+
+.new-account-link a{
+  color: #2980b9;
+  text-decoration: underline ;
+}
+
+.new-account-link p{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.new-account-link a :visited {
+  color: #555555;
+}
+
+
+.msg3 {
+  color: red;
+}

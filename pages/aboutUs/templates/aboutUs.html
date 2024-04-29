@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'About' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('aboutUs.static', filename='css/aboutUs.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+    <h1>About Us</h1>
+    <p>Welcome to our platform, a dedicated space designed to help you discover reliable and affordable handyman services for your home improvement needs. Our application is meticulously crafted to connect you with local handymen who match your specific requirements.
+
+We understand the challenges of finding the right handyman, and with our extensive database featuring skilled and entry-level professionals, you can easily compare services and profiles to find your ideal match. Our platform offers complete access to job candidate details, ensuring transparency and peace of mind for registered users.
+
+Our mission is to simplify the process of finding a handyman, making it stress-free and straightforward. We believe in empowering both customers and handymen by providing a platform where individuals can register as service providers and offer their expertise. Whether you need a one-time repair or ongoing maintenance, we've got you covered.
+
+Our website serves as a hub not only for customers seeking handyman services but also for individuals looking to register as service providers. If you're a handyman looking for opportunities, sign up, create a profile with your experience, skills, and availability.
+
+Our application facilitates seamless connections between you and potential clients in your area who are seeking handyman services. Access a range of job opportunities at different price points, allowing you to find work that fits your schedule and meets your financial needs.
+
+Dedicated to empowering individuals in the handyman industry, our user-friendly platform streamlines the job search process. Whether you're a seasoned professional or just starting out, our website can help you find work and grow your business. Sign up today and explore the myriad opportunities available to you as a skilled handyman.
+
+We take pride in our commitment to providing exceptional service and support to all our users. Don't wait – sign up today and start exploring our database of talented handymen to find the perfect match for your home improvement needs!</p>
+{% endblock %}
+
+{% block page_body_footer %}{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('aboutUs.static', filename='js/aboutUs.js') }}"></script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

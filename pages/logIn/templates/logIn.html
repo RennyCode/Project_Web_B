@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Log_In' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('logIn.static', filename='css/logIn.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+  <body>
+      <div class="card">
+          <h1>Log in</h1>
+          <br>
+          {% if session.get('logged_in') %}
+             <p> User: {{session.get('username')}}</p>
+          {% else %}
+          <form method = "POST" action="/logIn" class="my-form3">
+            <div class="msg3">
+              {% if msg1 %}
+                {{ msg1 }}
+              {% endif %}
+            </div>
+            <label> User Name: </label><br><br>
+          <input type="text" name="e-mail" id="user_name" placeholder="">
+          <br>
+          <br>
+           <label>Password: </label><br><br>
+          <input type="password" name="password" id="Password" placeholder="**********">
+          <br>
+          <br>
+          <div class="login">
+            <input type="submit" class="submit" value="Log in">
+            <br>
+            <br>
+            <div class="new-account-link">
+            <p>To create a new account <a href="/signIn">click here</a>.</p>
+            </div>
+          </div>
+        </form>
+          {% endif %}
+      </div>
+
+  </body>{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('logIn.static', filename='js/logIn.js') }}"></script>
+{% endblock %}

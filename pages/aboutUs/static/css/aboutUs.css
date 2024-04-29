@@ -1,0 +1,14 @@
+
+.About_Us{
+   display:flex;
+   flex-wrap:wrap;
+   margin: 0 auto;
+   padding: 1.875em 1.875em;
+   width: 80%;
+   justify-content:center;
+   gap: 1.875em;
+}
+
+.About_Us p{
+    font-size:1em;
+}

@@ -1,0 +1,65 @@
+
+.card-search{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  margin-top: 5EM;
+  padding: 1.875em 1.875em;
+  border-radius: 0.625em;
+  box-shadow: 0 0 3.125em rgba(0,0,0,0.9);
+  width: 55%;
+  background: padding-box;
+  justify-content:center;
+  align-items:center;
+  gap: 1.2em;
+  min-width:40em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width as needed */
+}
+
+
+.details{
+    flex: 1;
+    text-align: left;
+    margin-right: 20px; /* Adjust the margin as needed */
+    max-width: 40%; /* Adjust the max-width to minimize the width */
+}
+
+.next{
+  position:relative;
+  left:8em;
+  padding: 0;
+  border:none;
+}
+
+.prev{
+  position:relative;
+  right: 8em;
+  padding: 0;
+  border:none;
+}
+
+.next:hover,.prev:hover,.btn:hover {
+  transform: scale(1.1);
+}
+
+#prev, #next {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+#phoneNumberDisplay {
+  color: black;
+}

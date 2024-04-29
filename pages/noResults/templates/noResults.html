@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Search_Results' %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('noResults.static', filename='css/noResults.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+  <body>
+      <div class="message">
+          <h1>No Results Found</h1>
+          <p>Try adjusting your search to find what you're looking for.</p>
+      </div>
+  </body>
+
+{% endblock %}
+
+{% block page_body_footer %}{% endblock %}
+
+{% block page_body_js %}
+
+{% endblock %}

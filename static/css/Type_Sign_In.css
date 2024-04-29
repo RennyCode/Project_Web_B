@@ -1,0 +1,16 @@
+
+.typeSign{
+  margin-top:1.875em;
+  gap:1.375em;
+  display:flex;
+  align-items:center;
+  flex-direction: column;
+}
+
+.Business:hover , .Service:hover{
+     transform: scale(1.1);
+}
+
+.Business , .Service {
+  margin-top:2.5em;
+}

@@ -1,0 +1,75 @@
+
+    <link rel="stylesheet" href="../static/css/Sign_In_Business.css">
+    {% extends 'HTML_Files/base.html' %}
+    {% block title %}
+      sign in business
+      {% endblock %}
+    {% block main_block %}
+  <body>
+
+
+      <div class="card">
+        <div class="=Sign_In_Business">
+            <h1>Sign In Business </h1>
+        </div>
+        <form action="" class="my-form1">
+            <div class="msg1"></div>
+                <label>Business name: </label><br><br>
+                <input type="text" name="Business name" id="BusinessName" placeholder="Business name...">
+                <br>
+                <br>
+                <label>User name: </label><br><br>
+                <input type="text" name="User name" id="userName1" placeholder="User name...">
+                <br>
+                <br>
+                <label>E-mail: </label><br><br>
+                <input type="email" name="Email" id="BusinessEmail" placeholder="Email...">
+                <br>
+                <br>
+                <label>Password: </label><br><br>
+                <input type="password" name="BusinessPassword" id="BusinessPassword" placeholder="**********">
+                <br>
+                <br>
+                <label>Address: </label><br><br>
+                <input type="text" name="City" id="BusinessAddress" placeholder="City...">
+                <br>
+                <br>
+                <label>Gender: </label><br><br>
+                <select name="gender" class="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+                </select>
+                <br>
+                <br>
+                <label>Phone number:<br><br>
+                <input type="tel" name="phone" id="BusinessPhone" placeholder="Phone...">
+                </label>
+                <br>
+                <br>
+            <label>Profession:<br><br>
+                <select name="Profession" class="Profession">
+                <option value="renovations">renovations</option>
+                <option value="technician">technician</option>
+                <option value="professional">professional</option>
+                <option value="plumber">plumber</option>
+                <option value="homeMaintenance">home Maintenance</option>
+                <option value="craftsmen">craftsmen</option>
+                <option value="serviceLaboratories">serviceLaboratories</option>
+                <option value="Installers">Installers</option>
+                </select>
+            </label>
+            <br>
+                <br>
+                <label> Seniority: </label><br><br>
+               <input type="number" name="Seniority" id="BusinessSeniority" placeholder="Seniority...">
+                <br>
+                <br>
+                <div class="signInBusiness">
+                  <input type="submit" class="submit" value="Get Started!">
+                </div>
+        </form>
+      </div>
+    <script src="../static/js/Valid_Sign_In_Busi.js"></script>
+  </body>
+    {% endblock %}

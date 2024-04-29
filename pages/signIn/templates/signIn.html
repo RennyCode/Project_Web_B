@@ -1,0 +1,70 @@
+
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Sign_In' %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{{ url_for('signIn.static', filename='css/signIn.css') }}"/>
+
+{% endblock %}
+
+{% block page_body_main_content %}
+      <body>
+      <div class="card">
+        <div class="signIn">
+          <h1>Sign In </h1>
+        </div>
+        <form action="/signIn"  method="POST"  class="my-form" >
+           <div class="msg"></div>
+            <label>First Name: </label><br><br>
+              <input type="text" name="firstName" id="name" placeholder="First name...">
+              <br>
+              <br>
+              <label>Last Name: </label><br><br>
+              <input type="text" name="lastName" id="last_name" placeholder="Last name...">
+              <br>
+              <br>
+              <label>User Name: </label><br><br>
+              <input type="text" name="username" id="User_Name" placeholder="User Name...">
+              <br>
+              <br>
+              <label>E-mail: </label><br><br>
+              <input type="email" name="email"  id="email" placeholder="E-mail...">
+              <br>
+              <br>
+              <label>Password: </label><br><br>
+              <input type="password" name="password" id="password" placeholder="**********">
+              <br>
+              <br>
+              <label>Address: </label><br><br>
+                <input type="text" name="city" id="city" placeholder="City...">
+              <br>
+              <br>
+              <label>Gender: </label><br><br>
+              <select name="gender" class ="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <br>
+              <br>
+              <label>Phone Number: </label><br><br>
+              <label>
+                <input type="tel" name="phone" id= "phone" placeholder="Phone...">
+              </label>
+              <br>
+              <br>
+              <div class="signIn">
+                <input type="submit" class="submit" value="Get Started!" >
+              </div>
+              <div class="msg1" style="display: none">{{msg1}}</div>
+
+          </form>
+      </div>
+  </body>
+{% endblock %}
+
+{% block page_body_js %}
+    <script src="{{ url_for('signIn.static', filename='js/signIn.js') }}"></script>
+{% endblock %}

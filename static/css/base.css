@@ -1,0 +1,180 @@
+
+        /* CSS HEX colors */
+        :root {
+            --black: #000000ff;
+            --french-gray: #BCC4D2ff;
+            --sunset: #FCCA7Aff;
+            --powder-blue: #d2d6e0;
+            --yinmn-blue: #2D4B80ff;
+            --orange-web: #FFAE43ff;
+            --delft-blue: #172C51ff;
+            --slate-gray: #6F7688ff;
+            --white: #FFFFFFff;
+        }
+
+body {
+  color: white;
+}
+
+* {
+  font-family: Tahoma, serif;
+  font-weight: bold;
+  margin:0;
+  padding:0;
+}
+
+
+h1 {
+  color: var(--yinmn-blue);
+  font-size: 4rem;
+  border: white;
+  margin: 20px;
+}
+
+h2 {
+  width: 43.75vw;
+  color: var(--slate-gray);
+  font-size: 3rem;
+  border: white;
+  margin: 20px;
+}
+
+
+h3 {
+  /*width: 20.75vw;*/
+  color: #2D4B80ff;
+  font-size: 2rem;
+  border: white;
+  margin: 20px;
+}
+
+#logo{
+  height: 6.25em;
+  width: 13.25em;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+#sidebar li{
+    display: inline-block; /* Display buttons horizontally */
+    margin-left: 20px; /* Add spacing between buttons */
+    cursor: pointer;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+#sidebar a:hover{
+  color: black;
+}
+
+P {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-right: 100px;
+    margin-left: 100px;
+    /*padding-left: 20em;
+    padding-right: 20em;*/
+}
+
+
+#sidebar{ /*animation*/
+  position:relative;
+  animation-name:sidebar;
+  animation-duration:2s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes sidebar{ /*animation*/
+  0%{
+    left:-62.5em;
+  }
+  100%{
+  left:0;
+  }
+}
+
+#sidebar ul li img {
+filter: invert(100%);
+}
+
+#sidebar ul li img { /*animation*/
+  transition-property:transform;
+  transition-duration:0.5s;
+}
+
+#sidebar ul li img:hover { /*animation*/
+  transform: rotateY(360deg);
+}
+
+ul li img {
+  width: 2.1875em;
+  padding-top: 1.25em;
+  margin: -0.625em 1.25em;
+}
+
+
+button{
+ font-size: 1em;
+  width:8em;
+  padding:0.5em 0;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #A0B8E0;
+  color: white;
+  cursor: pointer;
+}
+
+.button{
+ font-size: 1em;
+  width:8em;
+  padding:0.5em 0;
+  border-radius: 0.5em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #A0B8E0;
+  color: white;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button a:visited{
+  color:white;
+}
+
+button a:hover{
+  color: var(--yinmn-blue);
+}
+button a:active{
+  color:blue;
+}
+
+.flex-Con{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height:15%;
+  width:100%;
+  justify-content:space-between;
+  align-items: center;
+  background-color: var(--yinmn-blue);
+}
+
+
